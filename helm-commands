@@ -1,1 +1,5 @@
 
+helm list
+helm install --debug --dry-run ./chart_name
+helm delete release_name 
+helm release_name status
