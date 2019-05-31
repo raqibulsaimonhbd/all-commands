@@ -1,0 +1,11 @@
+gcloud auth list
+gcloud config list
+gcloud config list project
+gcloud config set project <PROJECT_ID>
+gcloud config set compute/region us-central1
+gcloud config set compute/zone us-central1-f
+
+Note: When you run gcloud on your own machine, the config settings would've been persisted across sessions. 
+But in Cloud Shell, you will need to set this for every new session or reconnection.
+dev_appserver.py ./ // run the python application
+gcloud app deploy app.yaml // deploy in app engine
